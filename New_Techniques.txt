@@ -1,0 +1,10 @@
+Techniques Learnt by Questions
+
+
+1: -- GROUP BY
+   -- HAVING
+   -- IN 
+   -- COUNT
+
+2: -- LEFT JOIN
+   --
