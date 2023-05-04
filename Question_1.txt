@@ -1,4 +1,5 @@
 -- Question 1: Data Science Skills [LinkedIn SQL Interview Question]
+-- Video Explanantion :  https://github.com/yellomello/SQL
 
 SELECT candidate_id
       --COUNT(skill) as skill_count
