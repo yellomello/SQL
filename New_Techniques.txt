@@ -7,4 +7,11 @@ Techniques Learnt by Questions
    -- COUNT
 
 2: -- LEFT JOIN
-   --
+   -- IS NULL
+   
+2.2: -- EXCEPT
+
+
+2.3: --NOT IN
+     --DISTINCT
+      
