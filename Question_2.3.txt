@@ -1,0 +1,11 @@
+-- Question 2: Page With No Likes [Facebook SQL Interview Question]
+
+-- Here's another another method to solve the same problem
+-- Video Explantion: https://youtu.be/krkNL5vQTH8
+
+SELECT page_id
+FROM pages
+WHERE page_id NOT IN (
+  SELECT DISTINCT page_id
+  FROM page_likes
+);
