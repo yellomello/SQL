@@ -1,0 +1,4 @@
+Here's a whole bunch of resources out there for learning SQL but I'm planning to go with DataLemur
+
+Link: https://datalemur.com/questions/sql-page-with-no-likes
+
