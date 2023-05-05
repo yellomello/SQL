@@ -1,6 +1,6 @@
 -- Question 3 Unfinished Parts [Tesla SQL Interview Question]
 -- Here's another method to solve the same problem
--- Video Explantion: https://youtu.be/3K6EBvNuk0A
+-- Video Explantion: https://youtu.be/J6QKdxCaVB8
 
 SELECT part,assembly_step FROM parts_assembly
 WHERE finish_date IS NULL
