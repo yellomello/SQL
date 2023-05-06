@@ -24,4 +24,8 @@ Techniques Learnt by Questions
      --Naming Tables
      --BETWEEN (for selecting tweets from a particular year)
      
+6  : --(Common Table Expressions)
+     --WITH table_name AS(SELECT........)
+            SELECT * FROM table_name
+     
       
