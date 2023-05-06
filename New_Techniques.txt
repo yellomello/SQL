@@ -16,4 +16,10 @@ Techniques Learnt by Questions
      --DISTINCT
      
 4  : --COUNT(*) FILTER WHERE (condition)
+
+5  : --Selecting from another Table SELECT
+                                       SELECT
+     --Naming Tables
+     --BETWEEN (for selecting tweets from a particular year)
+     
       
