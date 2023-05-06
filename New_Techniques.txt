@@ -14,4 +14,6 @@ Techniques Learnt by Questions
 
 2.3: --NOT IN
      --DISTINCT
+     
+4  : --COUNT(*) FILTER WHERE (condition)
       
