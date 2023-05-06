@@ -1,0 +1,14 @@
+-- Question 5: Histogram of Tweets [Twitter SQL Interview Question]
+-- Video Explanantion :  https://youtu.be/bEH85vjeews
+
+SELECT tweets_per_user_in_2022 AS tweet_bucket,
+COUNT(user_id) AS users_num
+FROM
+
+    (SELECT user_id,
+    COUNT(tweet_id) AS tweets_per_user_in_2022
+    FROM tweets
+    WHERE tweet_date BETWEEN '01/01/2022' AND '12/31/2022'
+    GROUP BY user_id) AS apple
+    
+GROUP BY tweets_per_user_in_2022;
