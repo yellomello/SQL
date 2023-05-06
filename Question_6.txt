@@ -1,0 +1,21 @@
+-- Question 6: Duplicate Job Listings [Linkedin SQL Interview Question]
+-- Video Explanantion :  https://youtu.be/8BHGUId8Dbs
+
+WITH apple AS (
+  SELECT 
+    company_id,
+    title,
+    description,
+    COUNT(job_id) AS jobs
+  FROM job_listings
+  GROUP BY 
+    company_id,
+    title,
+    description
+  ORDER BY jobs DESC
+)
+
+
+SELECT COUNT(DISTINCT(company_id)) AS co_w_duplicate_jobs
+FROM apple
+WHERE jobs >=2
