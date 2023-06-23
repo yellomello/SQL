@@ -1,0 +1,36 @@
+--My version
+SELECT 
+Artist_Name,
+artist_rankings
+FROM
+  (SELECT
+    Artist_Name,
+    DENSE_RANK() OVER (ORDER BY total_top_10 DESC) as artist_rankings
+  FROM 
+  
+  
+    (SELECT 
+      artists.artist_name as Artist_Name,
+      artist, 
+      
+      SUM(total_top_10_appearances_by_song) as total_top_10
+    FROM 
+      
+      (SELECT 
+        songs.artist_id as artist,
+        global_song_rank.song_id,
+        COUNT(global_song_rank.rank) AS total_top_10_appearances_by_song
+      FROM global_song_rank
+      LEFT JOIN songs
+      ON global_song_rank.song_id= songs.song_id
+      
+      GROUP BY songs.artist_id,global_song_rank.song_id, rank
+      HAVING rank <=10
+      ORDER BY COUNT(global_song_rank.rank) DESC) AS table_1
+    LEFT JOIN artists
+    ON artist= artists.artist_id
+      
+    GROUP BY artists.artist_name,artist
+    ORDER BY total_top_10 DESC) AS table_2) AS table_3
+WHERE artist_rankings <=5
+
